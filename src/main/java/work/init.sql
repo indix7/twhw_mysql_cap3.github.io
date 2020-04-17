@@ -21,6 +21,7 @@ CREATE TABLE course (
                         student_id INT ,
                         teacher_id INT ,
                         subject_id INT ,
+                        score FLOAT,
                         PRIMARY KEY(no)
 )ENGINE  = InnoDB CHARSET = utf8mb4;
 
@@ -31,11 +32,6 @@ CREATE TABLE teacher_subject (
                                  PRIMARY KEY (no)
 )ENGINE  = InnoDB CHARSET = utf8mb4;
 
-CREATE TABLE score(
-                      no INT NOT NULL,
-                      course_no INT ,
-                      score FLOAT DEFAULT -1
-)ENGINE = InnoDB CHARSET = utf8mb4;
 
 CREATE TABLE login (
                        id VARCHAR(50) NOT NULL,
